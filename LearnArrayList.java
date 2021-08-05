@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 public class LearnArrayList {
     public static void main(String[] args) {
@@ -13,7 +14,7 @@ public class LearnArrayList {
         // System.out.println(list);
         list.add(1, 10);
         // System.out.println(list);
-        List<Integer> newList=new ArrayList<>();
+        List<Integer> newList=new LinkedList<>();
         newList.add(20);
         newList.add(30);
         newList.add(90);
@@ -32,7 +33,7 @@ public class LearnArrayList {
             // System.out.println(list.get(i));
         }
         for(Integer i:list){
-            // System.out.println(i);
+            System.out.println(i);//Best way to use
         }
         Iterator<Integer> it=list.iterator();
         while(it.hasNext()){
