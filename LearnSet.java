@@ -55,5 +55,13 @@ public class LearnSet {
         System.out.println(s.size());
         // s.clear();
         // System.out.println(s);
+
+        Set<Student> so=new HashSet<>();
+        so.add(new Student("sam",1));
+        so.add(new Student("tom",2));
+        so.add(new Student("pal",3));
+        so.add(new Student("bot",2));
+        System.out.println(so);
+
     }
 }
