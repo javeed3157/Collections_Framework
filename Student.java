@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
     String name;
     int roll;
     public Student(String name,int roll){
@@ -21,5 +21,10 @@ public class Student {
     @Override
     public int hashCode() {
         return Objects.hash(roll);
+    }
+    @Override
+    public int compareTo(Student o) {
+        return this.roll-o.roll;
+        // return this.name-o.name;
     }
 }
